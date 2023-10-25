@@ -1,5 +1,15 @@
 /* Database schema to keep the structure of entire database. */
 
 CREATE TABLE animals (
-    name varchar(100)
+    id INT GENERATED ALWAYS AS IDENTITY,
+    name TEXT,
+    date_of_birth DATE,
+    escape_attempts INT,
+    neutered BOOLEAN,
+    weight_kg DECIMAL(10,2),
+    PRIMARY KEY(id)
 );
+
+-- Add new column from Day 2 Task
+
+ALTER TABLE animals ADD COLUMN species TEXT;
