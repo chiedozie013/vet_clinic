@@ -9,3 +9,7 @@ CREATE TABLE animals (
     weight_kg DECIMAL(10,2),
     PRIMARY KEY(id)
 );
+
+-- Add new column from Day 2 Task
+
+ALTER TABLE animals ADD COLUMN species TEXT;
